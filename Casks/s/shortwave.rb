@@ -1,18 +1,15 @@
 cask "shortwave" do
-  arch arm: "arm64", intel: "x64"
+  version "2025.01.03"
+  sha256 "475d6314364b1c64a49c06717c7f034ef81be6c0a0f4c80b6cae609274642757"
 
-  version "2024.12.06"
-  sha256  arm:   "8f950be0afa18684a0ffe52007d1c91ae7419313fa1ea7e8db684d0efe29986c",
-          intel: "8b155bd618e94a53f2f1db9bb9b09bb27733174cb1fac25b838213903a50d3f1"
-
-  url "https://storage.googleapis.com/shortwave-downloads/desktop_app/darwin/#{arch}/Shortwave-darwin-#{arch}-#{version}.zip",
+  url "https://storage.googleapis.com/shortwave-downloads/desktop_app/darwin/universal/Shortwave-darwin-universal-#{version}.zip",
       verified: "storage.googleapis.com/shortwave-downloads/"
   name "Shortwave"
   desc "Email client"
   homepage "https://www.shortwave.com/"
 
   livecheck do
-    url "https://storage.googleapis.com/shortwave-downloads/desktop_app/darwin/#{arch}/RELEASES.json"
+    url "https://storage.googleapis.com/shortwave-downloads/desktop_app/darwin/universal/RELEASES.json"
     strategy :json do |json|
       json["currentRelease"]
     end

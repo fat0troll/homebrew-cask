@@ -11,7 +11,7 @@ cask "tiger-trade" do
 
   livecheck do
     url "https://up.play-analytics.com/app/upgrade/latest?lang=zh_CN&platform=darwin&appVer=1"
-    regex(/TigerTrade[._-]v?(\d+(?:\.\d+)+)[._-](\h+).dmg/i)
+    regex(/TigerTrade[._-]v?(\d+(?:\.\d+)+)[._-](\h+)\.dmg/i)
     strategy :json do |json, regex|
       match = json["downloadUrl"]&.match(regex)
       next if match.blank?
@@ -20,7 +20,7 @@ cask "tiger-trade" do
     end
   end
 
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :high_sierra"
 
   app "Tiger Trade.app"
 

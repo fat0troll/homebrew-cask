@@ -1,6 +1,6 @@
 cask "teleport-connect" do
-  version "17.1.3"
-  sha256 "12f20a6dd2d879ef76075973bbfbb451d02fbecda6b7f72b3849e99f036a5efe"
+  version "17.1.6"
+  sha256 "210282790a509044d0a3e9206fa44858384c817c0093df5576b3a16547a218fa"
 
   url "https://cdn.teleport.dev/Teleport%20Connect-#{version}.dmg",
       verified: "cdn.teleport.dev/"
@@ -12,6 +12,8 @@ cask "teleport-connect" do
     url "https://goteleport.com/download/"
     regex(/href=.*?Teleport%20Connect[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
+
+  depends_on macos: ">= :big_sur"
 
   app "Teleport Connect.app"
 

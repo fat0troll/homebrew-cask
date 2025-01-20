@@ -1,6 +1,6 @@
 cask "treesheets" do
-  version "12612114396"
-  sha256 "df315ae57f64d8530f6c699ed24fb255edc48ef6541c837e529d4bc48775498a"
+  version "12816565043"
+  sha256 "9c41b3cfc978a45aa4b20053b08ec1a93fdde7991c05bb716547a6c1e572c1e1"
 
   url "https://github.com/aardappel/treesheets/releases/download/#{version}/mac_treesheets.zip",
       verified: "github.com/aardappel/treesheets/"
@@ -13,6 +13,8 @@ cask "treesheets" do
     regex(/^(\d+)$/i)
     strategy :github_latest
   end
+
+  depends_on macos: ">= :catalina"
 
   app "TreeSheets.app"
 

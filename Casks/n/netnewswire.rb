@@ -11,8 +11,8 @@ cask "netnewswire" do
     end
   end
   on_ventura :or_newer do
-    version "6.1.8"
-    sha256 "ff1872d2017660760154f500970c921f4ff221e94c35e16553b61afc00f1d4d2"
+    version "6.1.9"
+    sha256 "c06d7f129b0ad423170d333f5a5345041515aba2144a3d06124a98e40cdffe5b"
 
     url "https://github.com/Ranchero-Software/NetNewsWire/releases/download/mac-#{version}/NetNewsWire#{version}.zip",
         verified: "github.com/Ranchero-Software/NetNewsWire/"
@@ -34,12 +34,11 @@ cask "netnewswire" do
   app "NetNewsWire.app"
 
   zap trash: [
-    "~/Library/Application Scripts/com.ranchero.NetNewsWire-Evergreen",
-    "~/Library/Application Scripts/com.ranchero.NetNewsWire-Evergreen.Subscribe-to-Feed",
+    "~/Library/Application Scripts/com.ranchero.NetNewsWire-Evergreen*",
+    "~/Library/Application Scripts/group.com.ranchero.NetNewsWire-Evergreen",
     "~/Library/Application Support/NetNewsWire",
     "~/Library/Caches/com.ranchero.NetNewsWire-Evergreen",
-    "~/Library/Containers/com.ranchero.NetNewsWire-Evergreen",
-    "~/Library/Containers/com.ranchero.NetNewsWire-Evergreen.Subscribe-to-Feed",
+    "~/Library/Containers/com.ranchero.NetNewsWire-Evergreen*",
     "~/Library/Group Containers/group.com.ranchero.NetNewsWire-Evergreen",
     "~/Library/Preferences/com.ranchero.NetNewsWire-Evergreen.plist",
     "~/Library/Saved Application State/com.ranchero.NetNewsWire-Evergreen.savedState",

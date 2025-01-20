@@ -1,11 +1,11 @@
 cask "grandtotal" do
-  version "9.0.3.10"
-  sha256 "8332ef06af63eab2111b25fc897470b045d8822b96f525550b6cc64decd76659"
+  version "9.0.3.22"
+  sha256 "5ccd3d78f7c22359ebd5d31ee25efb2b5e15d21dfdcc92cf07a1cba09e2f1a49"
 
   url "https://www.mediaatelier.com/GrandTotal#{version.major}/GrandTotal_#{version}.dmg"
   name "GrandTotal"
   desc "Create invoices and estimates"
-  homepage "https://www.mediaatelier.com/GrandTotal#{version.major}/"
+  homepage "https://www.mediaatelier.com/GrandTotal/"
 
   livecheck do
     url "https://www.mediaatelier.com/GrandTotal#{version.major}/feed.php"
@@ -21,10 +21,10 @@ cask "grandtotal" do
   app "GrandTotal.app"
 
   zap trash: [
-    "~/Library/Application Support/com.mediaatelier.GrandTotal3",
-    "~/Library/Caches/com.mediaatelier.GrandTotal3",
-    "~/Library/HTTPStorages/com.mediaatelier.GrandTotal3",
-    "~/Library/Preferences/com.mediaatelier.GrandTotal3.plist",
-    "~/Library/Saved Application State/com.mediaatelier.GrandTotal3.savedState",
+    "~/Library/Application Support/com.mediaatelier.GrandTotal*",
+    "~/Library/Caches/com.mediaatelier.GrandTotal*",
+    "~/Library/HTTPStorages/com.mediaatelier.GrandTotal*",
+    "~/Library/Preferences/com.mediaatelier.GrandTotal*.plist",
+    "~/Library/Saved Application State/com.mediaatelier.GrandTotal*.savedState",
   ]
 end

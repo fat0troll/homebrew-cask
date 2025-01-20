@@ -1,6 +1,6 @@
 cask "mythic" do
-  version "0.4.2"
-  sha256 "13f10cedb4d410ec6e9b939df6ab96726c6e4aa9bde777cc1bfa862bb080b775"
+  version "0.4.4"
+  sha256 "7aeed97df6f10e0355540d2e450d4e83d3ec1ba77171235d8c58688f12d103c4"
 
   url "https://dl.getmythic.app/sparkle-temp/Mythic-#{version}.zip"
   name "Mythic"
@@ -8,7 +8,7 @@ cask "mythic" do
   homepage "https://getmythic.app/"
 
   livecheck do
-    url "https://dl.getmythic.app/sparkle-temp/appcast.xml"
+    url "https://getmythic.app/appcast.xml"
     strategy :sparkle, &:short_version
   end
 

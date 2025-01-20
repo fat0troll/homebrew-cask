@@ -1,6 +1,6 @@
 cask "macwhisper" do
-  version "11.2,1127"
-  sha256 "52de7b1bab40091d976add2079fb0c86c119b72b749a8394b4df2d4e8c3ff516"
+  version "11.4.3,1145"
+  sha256 "928c3557554e6ddb1fff280b5b0b8969dd7608dec550317c593c9f7d133bcb16"
 
   url "https://stickytimers.app/macwhisper/MacWhisper-#{version.csv.second}.zip",
       verified: "stickytimers.app/macwhisper/"
@@ -13,7 +13,7 @@ cask "macwhisper" do
   livecheck do
     url "https://macwhisper-site.vercel.app/appcast.xml"
     strategy :sparkle do |items|
-      items.map { |item| "#{item.short_version},#{item.version}" }
+      items.map(&:nice_version)
     end
   end
 

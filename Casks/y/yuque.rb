@@ -1,6 +1,6 @@
 cask "yuque" do
-  version "3.4.7.1215,BJfb0c68b3aac848b1a9eedba51bb7bf85"
-  sha256 "c147e215d8399d06a1d05e4d4708063444da1b624705fc99d48ad578ae026a07"
+  version "4.0.5.1309,BJe833739b4f8f477fbd930ac4a3acbfed"
+  sha256 "40cc46c385debed7dca51a50723f3f9e861737e4baf6ab8fc286247dff0eebbf"
 
   url "https://app.nlark.com/yuque-desktop/#{version.csv.first}/#{version.csv.second}/Yuque-#{version.csv.first}.dmg",
       verified: "app.nlark.com/yuque-desktop/"
@@ -18,6 +18,8 @@ cask "yuque" do
       page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
     end
   end
+
+  depends_on macos: ">= :high_sierra"
 
   app "语雀.app"
 

@@ -1,6 +1,6 @@
 cask "chatgpt" do
-  version "1.2024.346,1734386520"
-  sha256 "dbddfd3192dc2d8fbda155c897851efd082542787e470ff1321997f26851e379"
+  version "1.2025.009,1737138094"
+  sha256 "ceba3afe17650027a6310246825726595cd12e4e5225354a8c3342991a38aeb1"
 
   url "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_#{version.csv.first}_#{version.csv.second}.dmg",
       verified: "persistent.oaistatic.com/sidekick/public/"
@@ -13,7 +13,7 @@ cask "chatgpt" do
   livecheck do
     url "https://persistent.oaistatic.com/sidekick/public/sparkle_public_appcast.xml"
     strategy :sparkle do |items|
-      items.map { |item| "#{item.short_version},#{item.version}" }
+      items.map(&:nice_version)
     end
   end
 

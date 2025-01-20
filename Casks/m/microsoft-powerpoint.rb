@@ -56,8 +56,8 @@ cask "microsoft-powerpoint" do
     end
   end
   on_ventura :or_newer do
-    version "16.92.24120731"
-    sha256 "fe0214886ddedf997e3d1ee8be429a579084e503cab76cc76a5f09c109c31a49"
+    version "16.93.25011212"
+    sha256 "45d0e5394ee4f60b3d4ceada287e3195e2a0eaa96a25aa99b6d4df95caa12f7d"
 
     livecheck do
       url "https://go.microsoft.com/fwlink/p/?linkid=525136"
@@ -95,9 +95,9 @@ cask "microsoft-powerpoint" do
             delete:    "/Applications/Microsoft PowerPoint.app"
 
   zap trash: [
-    "~/Library/Application Scripts/com.microsoft.Powerpoint",
+    "~/Library/Application Scripts/com.microsoft.Powerpoint*",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.powerpoint.sfl*",
-    "~/Library/Containers/com.microsoft.Powerpoint",
+    "~/Library/Containers/com.microsoft.Powerpoint*",
     "~/Library/Preferences/com.microsoft.Powerpoint.plist",
     "~/Library/Saved Application State/com.microsoft.Powerpoint.savedState",
   ]

@@ -1,5 +1,5 @@
 cask "unity-hub" do
-  version "3.10.0"
+  version "3.11.0"
   sha256 :no_check
 
   url "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.dmg"
@@ -13,6 +13,7 @@ cask "unity-hub" do
   end
 
   auto_updates true
+  depends_on macos: ">= :high_sierra"
 
   app "Unity Hub.app"
 

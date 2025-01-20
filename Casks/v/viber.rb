@@ -1,7 +1,7 @@
 cask "viber" do
   arch arm: "_arm"
 
-  version "24.3.4,2430"
+  version "24.4.0,2440"
   sha256 :no_check
 
   url "https://download.viber.com/desktop/mac#{arch}/Viber.dmg"
@@ -15,7 +15,7 @@ cask "viber" do
   end
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   app "Viber.app"
 

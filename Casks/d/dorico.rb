@@ -1,6 +1,6 @@
 cask "dorico" do
-  version "5.1.70,5b617ad7-8a77-4a1d-aa7a-e5bca46a22e1"
-  sha256 "4a6d3600877124ee6f99f05802fd20ef9f0ccf96bb03840d92fe3bb64db1026b"
+  version "5.1.81,97b84063-5556-4ef4-b308-15edc4d72339"
+  sha256 "c3cf427d3ddf8e7e9e9f751c7896fe869b14c97cc9a2736ac030dce5be19fa91"
 
   url "https://download.steinberg.net/automated_updates/sda_downloads/#{version.csv.second}/Dorico_#{version.csv.first}_Installer_mac.dmg"
   name "Dorico"

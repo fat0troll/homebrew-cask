@@ -1,9 +1,9 @@
 cask "follow" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.3.0-beta.0"
-  sha256 arm:   "4d83b01ae683ec6ee78617e8684453c78bd36541a2a2d871095859853afb9a1f",
-         intel: "45dcc0201d622d5809e1abcd3fbed89452d33ebd1cfbc36e51945abf35fc0b87"
+  version "0.3.2-beta.0"
+  sha256 arm:   "7ff0633e6887505f4f9efaf6d6aafb64475b613d934dda7426a5ebadb471c003",
+         intel: "bcdc14e22c2fe894816e4b3e21ff037fccade37bce1b9b42faf8c1eb1cb3eb8c"
 
   url "https://github.com/RSSNext/Follow/releases/download/v#{version}/Follow-#{version}-macos-#{arch}.dmg",
       verified: "github.com/RSSNext/Follow/"

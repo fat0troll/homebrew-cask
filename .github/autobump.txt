@@ -29,6 +29,7 @@ adguard-vpn@nightly
 adguard@nightly
 adobe-acrobat-pro
 adobe-acrobat-reader
+adobe-air
 adrive
 aerial@beta
 affine
@@ -40,6 +41,7 @@ airflow
 airtame
 akiflow
 alcom
+alcove
 aldente
 alex313031-thorium
 alfaview
@@ -140,7 +142,6 @@ blockbench
 blockstream-green
 blocs
 blood-on-the-clocktower-online
-bloop
 bluewallet
 boinc
 boltai
@@ -166,6 +167,7 @@ c0re100-qbittorrent
 cables
 cacher
 cahier
+caido
 calhash
 calibre
 camerabag-photo
@@ -285,6 +287,7 @@ default-folder-x
 defold
 defold@alpha
 defold@beta
+dehesselle-meld
 deltachat
 descript
 desktoppr
@@ -299,6 +302,7 @@ discord@development
 discord@ptb
 diskcatalogmaker
 djstudio
+dockdoor
 dockside
 dockx
 dogecoin
@@ -336,6 +340,7 @@ electrum
 elektron-overbridge
 elektron-transfer
 element
+element@nightly
 elephas
 elephicon
 elgato-camera-hub
@@ -558,11 +563,13 @@ ipfs
 ipvanish-vpn
 ireal-pro
 istat-menus
+istherenet
 iterm2
 iterm2@beta
 iterm2@nightly
 ivideonserver
 ivpn
+izip
 jabra-direct
 jami
 jamie
@@ -664,6 +671,7 @@ maccy
 macfuse
 macloggerdx
 macloggerdx@beta
+macpilot
 macrorecorder
 mactracker
 macupdater
@@ -681,6 +689,7 @@ mediahuman-youtube-downloader
 mediainfo
 mediamate
 megasync
+mellel
 melodics
 memory-cleaner
 mendeley-reference-manager
@@ -770,6 +779,7 @@ multitouch
 multiviewer-for-f1
 mumuplayer
 murus
+museeks
 mutedeck
 mutesync
 mweb-pro
@@ -789,8 +799,11 @@ neofinder
 neohtop
 neovide
 netbeans
+netnewswire
+netnewswire@beta
 netron
 netspot
+netxms-console
 nextcloud
 nextcloud-vfs
 ngrok
@@ -909,6 +922,7 @@ plex-media-server
 plexamp
 plus42-binary
 plus42-decimal
+pocket-casts
 pokemon-tcg-live
 poker-copilot
 polymail
@@ -966,6 +980,7 @@ qgis
 qgroundcontrol
 qlab
 qlmarkdown
+qlvideo
 qownnotes
 qq
 qqlive
@@ -1304,6 +1319,7 @@ virtualhereserver
 visual-paradigm
 visual-paradigm-ce
 visual-studio-code
+visual-studio-code@insiders
 vitamin-r
 vivaldi
 vivaldi@snapshot
@@ -1335,6 +1351,7 @@ wechat
 wechatwork
 wetype
 whalebird
+whatroute
 whatsapp
 whatsapp@beta
 whatsapp@legacy
@@ -1390,6 +1407,7 @@ zen-browser
 zen-browser@twilight
 zeplin
 zettlr
+zipic
 znote
 zoc
 zoho-mail
