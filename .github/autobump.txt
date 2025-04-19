@@ -162,6 +162,7 @@ blockbench
 blockstream-green
 blocs
 blood-on-the-clocktower-online
+bluestacks
 bluewallet
 boinc
 boltai
@@ -266,6 +267,7 @@ codux
 cog
 coin-wallet
 colorwell
+comfyui
 commander-one
 commandpost
 companion
@@ -344,6 +346,7 @@ defold@beta
 dehesselle-meld
 deltachat
 descript
+desktime
 desktoppr
 devpod
 devtunnel
@@ -534,7 +537,7 @@ fork
 forkgram-telegram
 forklift
 fossa
-foxglove-studio
+foxglove
 foxit-pdf-editor
 framer
 frappe-books
@@ -1008,6 +1011,7 @@ notebooks
 notesnook
 notion
 notion-calendar
+notion-mail
 nova
 novabench
 nozbe
@@ -1041,6 +1045,7 @@ ontime
 opal-composer
 openaudible
 opencat
+opencloud
 opencore-configurator
 opencore-patcher
 openlens
@@ -1354,6 +1359,7 @@ sitesucker-pro
 siyuan
 sketch
 sketch@beta
+sketchup
 skim
 skype
 skype@preview
@@ -1467,6 +1473,7 @@ teleport
 teleport-connect
 tella
 temurin
+temurin@8
 temurin@17
 temurin@21
 tenable-nessus-agent
@@ -1497,6 +1504,7 @@ ths
 thunder
 thunderbird
 thunderbird@beta
+thunderbird@daily
 thunderbird@esr
 ti-connect-ce
 ticktick
@@ -1615,6 +1623,7 @@ viz
 vk-calls
 vlc@nightly
 vnc-viewer
+vnote
 voiceink
 volanta
 vpn-tracker-365
@@ -1666,6 +1675,8 @@ wirecast
 wireframe-sketcher
 wireshark
 wireshark-chmodbpf
+wiso-steuer-2022
+wiso-steuer-2023
 wiso-steuer-2024
 wiso-steuer-2025
 wizcli
@@ -1726,3 +1737,4 @@ zotero
 zotero@beta
 zspace
 zulu
+zulufx
