@@ -11,6 +11,7 @@
   "codewhisperer": "amazon-q",
   "coqide": "coq-platform",
   "cron": "notion-calendar",
+  "dehesselle-meld": "meld",
   "dymo-label": "dymo-connect",
   "easy-move-plus-resize": "easy-move+resize",
   "emby-server": "embyserver",
@@ -27,6 +28,7 @@
   "font-mplus-nerd-font": "font-m+-nerd-font",
   "font-mplus": "font-m+",
   "font-smoothing-adjuster": "fontsmoothingadjuster",
+  "foxglove-studio": "foxglove",
   "geekbench-ml": "geekbench-ai",
   "gridtracker": "gridtracker2",
   "hepta": "heptabase",
@@ -69,5 +71,7 @@
   "tutanota": "tuta-mail",
   "vmware-fusion-tech@preview": "vmware-fusion@preview",
   "vmware-horizon-client": "omnissa-horizon-client",
-  "xournal-plus-plus": "xournal++"
+  "xournal-plus-plus": "xournal++",
+  "zen-browser": "zen",
+  "zen-browser@twilight": "zen@twilight"
 }

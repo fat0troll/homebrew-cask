@@ -1,15 +1,17 @@
 cask "tella" do
-  version "1.49"
-  sha256 "7c78911d055e0c40170e3b7d380bcc33de80f4555e11c404a4cf7aadc3145ee5"
+  version "1.53,159"
+  sha256 "f653eb57ecc98d55fcb29c3da850a37a4b3aa2f2211710709ec7479e61d71e0f"
 
-  url "https://mac.tella.tv/Tella-#{version}.dmg"
+  url "https://mac.tella.tv/Tella-#{version.csv.first}-#{version.csv.second}.dmg"
   name "Tella"
   desc "Screen recorder"
   homepage "https://www.tella.tv/"
 
   livecheck do
     url "https://mac.tella.tv/appcast.xml"
-    strategy :sparkle, &:short_version
+    strategy :sparkle do |items|
+      items.find { |item| item.channel.nil? }&.nice_version
+    end
   end
 
   auto_updates true

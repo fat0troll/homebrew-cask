@@ -1,6 +1,6 @@
 cask "ankiapp" do
-  version "10.0.2"
-  sha256 "a0540abb62929031143d19b6486e3f5bf6b595a2e4658a66b48e7cd1cf65b87b"
+  version "10.3.1"
+  sha256 "aa239a33798f662c71d4c4bbc1996a27447e26a5ddcf098ff2fe833522ca14ac"
 
   url "https://updates.ankiapp.com/AnkiApp-#{version}-universal-mac.zip"
   name "AnkiApp"

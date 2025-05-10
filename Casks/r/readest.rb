@@ -1,12 +1,17 @@
 cask "readest" do
-  version "0.9.35"
-  sha256 "4e350acc200d246380026b6049bc9df7805aa59e15f1c68a7df160558578d2cf"
+  version "0.9.40"
+  sha256 "fd87649c32adbd2fe9c3a704f6ea728ed2a174bff17ecbed4e3b819c5702c33c"
 
   url "https://github.com/readest/readest/releases/download/v#{version}/Readest_#{version}_universal.dmg",
       verified: "github.com/readest/readest/"
   name "Readest"
   desc "Ebook reader"
   homepage "https://readest.com/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   depends_on macos: ">= :monterey"
 

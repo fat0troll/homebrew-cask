@@ -2,9 +2,9 @@ cask "gologin" do
   arch arm: "-arm64"
   livecheck_arch = on_arch_conditional arm: "-arm"
 
-  version "3.3.89"
-  sha256 arm:   "6745ce01d8b8d1f5b13c7a8190e1838036fce7d4a90256f11e35b1301614a9a1",
-         intel: "458443f05decdd4f83ded7884f7e8e156d2a4281c211689f8538ae5e19bb85eb"
+  version "3.3.91"
+  sha256 arm:   "3a4e3231ebf8d3259c42bb05faaa2250b5ffba3164c12a783f5f051f88470e2a",
+         intel: "14e71a9b7de54b59c58fead556ec729a2a4842a88b733811e2ac1c50dbed1ae1"
 
   url "https://releases#{livecheck_arch}.gologin.com/GoLogin-#{version}#{arch}.dmg"
   name "GoLogin"

@@ -1,9 +1,9 @@
 cask "akuity" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.21.5"
-  sha256 arm:   "0cb17d5023df61a073bd274dda4ffc044aa9c1d855d39750415a69c7db4b5006",
-         intel: "7802705b9b615aee4373429632cb87d5e3138c7a795c926ab49aca5d94f4a4eb"
+  version "0.22.1-0.20250429170904-aeb4bb5e5bdc"
+  sha256 arm:   "c39db42febddf6ebcc0e4042a9868a12165697ca371908ecd82445d06ca23e7d",
+         intel: "2806fef73daac1e0c218800ddc9a3bf65f2ffaf59ca299a599cb09bfd1e73230"
 
   url "https://dl.akuity.io/akuity-cli/v#{version}/darwin/#{arch}/akuity"
   name "Akuity"
@@ -12,7 +12,7 @@ cask "akuity" do
 
   livecheck do
     url "https://dl.akuity.io/akuity-cli/stable.txt"
-    regex(/v?(\d+(?:\.\d+)+)/i)
+    regex(/v?(\d+(?:\.\d+)+(?:[_-]\d+(?:\.\d+)*)?(?:[_-]\h+)?)/i)
   end
 
   binary "akuity"

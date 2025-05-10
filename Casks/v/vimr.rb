@@ -1,6 +1,6 @@
 cask "vimr" do
-  version "0.52.0,20250401.183326"
-  sha256 "a1c824cc294df97500dba7ee553fc22424c1473aa12f8f1665097dbdf31d4130"
+  version "0.53.0,20250430.152427"
+  sha256 "a70735b59269d14262f30a66a96da268f08bf463c6596e64f1cb4f77d96eacdf"
 
   url "https://github.com/qvacua/vimr/releases/download/v#{version.csv.first}-#{version.csv.second}/VimR-v#{version.csv.first}.tar.bz2"
   name "VimR"
@@ -8,13 +8,9 @@ cask "vimr" do
   homepage "https://github.com/qvacua/vimr"
 
   livecheck do
-    url :url
-    regex(/^v?(\d+(?:\.\d+)+)[._-](\d+(?:\.\d+)+)$/i)
-    strategy :github_latest do |json, regex|
-      match = json["tag_name"]&.match(regex)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
+    url "https://raw.githubusercontent.com/qvacua/vimr/refs/heads/master/appcast.xml"
+    strategy :sparkle do |item|
+      item.nice_version.delete_prefix("v")
     end
   end
 

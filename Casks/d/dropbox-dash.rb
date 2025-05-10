@@ -1,6 +1,6 @@
 cask "dropbox-dash" do
-  version "3.63.9"
-  sha256 "b58162d3ad2b043a4c42e8e8a4d98b9eb2368de624529edbc69663aac9eb1faf"
+  version "3.67.15"
+  sha256 "baf7bb397b3d80581b71706b06440e91729493623d5e9debf83726a2b3d18868"
 
   url "https://edge.dropboxstatic.com/dbx-releng/products/dash-tesla/#{version}/mac.x86_64/Dropbox%20Dash-#{version}.dmg",
       verified: "edge.dropboxstatic.com/dbx-releng/products/dash-tesla/"

@@ -129,6 +129,7 @@ bananas
 banking-4
 banktivity
 basecamp
+batfi
 batteries
 bazecor
 bbedit
@@ -151,17 +152,20 @@ bing-wallpaper
 bisq
 bit-slicer
 bitbox
+bitrix24
 bitwarden
 bitwig-studio
 black-ink
 blender
 blender@lts
+blip
 blitz-gg
 block-goose
 blockbench
 blockstream-green
 blocs
 blood-on-the-clocktower-online
+bluestacks
 bluewallet
 boinc
 boltai
@@ -180,6 +184,7 @@ bricklink-studio
 brickstore
 bridge
 brightvpn
+browser-actions
 browser-deputy
 browserosaurus
 browserstacklocal
@@ -266,14 +271,16 @@ codux
 cog
 coin-wallet
 colorwell
+comfyui
 commander-one
 commandpost
 companion
-companion@beta
 companion-satellite
+companion@beta
 compositor
 confluent-cli
 connect-fonts
+consul
 contour
 cookie
 copilot
@@ -281,6 +288,11 @@ copilot-for-xcode
 copyq
 core-tunnel
 cork
+corretto
+corretto@11
+corretto@17
+corretto@21
+corretto@8
 coscreen
 coteditor
 couchbase-server-community
@@ -334,6 +346,7 @@ ddpm
 deadbolt
 decentr
 deckset
+deepchat
 deeper
 deepl
 deezer
@@ -341,9 +354,9 @@ default-folder-x
 defold
 defold@alpha
 defold@beta
-dehesselle-meld
 deltachat
 descript
+desktime
 desktoppr
 devpod
 devtunnel
@@ -357,6 +370,7 @@ discord@ptb
 disk-drill
 diskcatalogmaker
 display-pilot
+displaybuddy
 distroav
 djstudio
 dockdoor
@@ -424,6 +438,7 @@ engine-dj
 enpass
 ente
 ente-auth
+etrecheckpro
 entry
 epic-games
 eset-cyber-security
@@ -435,6 +450,7 @@ expressvpn
 fantastical
 far2l
 fastrawviewer
+fastscripts
 fathom
 favro
 fbreader
@@ -480,12 +496,14 @@ flutterflow
 fly
 flyenv
 fmail2
+focu
 focus
 focusrite-control
 focusrite-control-2
 folding-at-home@beta
 foldit
 folo
+font-0xproto
 font-chiron-hei-hk
 font-chiron-sung-hk
 font-elstobd
@@ -517,10 +535,21 @@ font-iosevka-ss15
 font-iosevka-ss16
 font-iosevka-ss17
 font-iosevka-ss18
+font-jetbrains-maple-mono
+font-jetbrains-maple-mono-nf
+font-juliamono
 font-lxgw-neoxihei
 font-lxgw-neozhisong
 font-lxgw-simxihei
 font-lxgw-simzhisong
+font-maple-mono
+font-maple-mono-cn
+font-maple-mono-nf
+font-maple-mono-nf-cn
+font-maple-mono-normal
+font-maple-mono-normal-cn
+font-maple-mono-normal-nf
+font-maple-mono-normal-nf-cn
 font-new-computer-modern
 font-sarasa-gothic
 font-sketchybar-app-font
@@ -534,8 +563,9 @@ fork
 forkgram-telegram
 forklift
 fossa
-foxglove-studio
+foxglove
 foxit-pdf-editor
+foxitreader
 framer
 frappe-books
 free-download-manager
@@ -598,6 +628,7 @@ godspeed
 gog-galaxy
 goland
 gologin
+goneovim
 goodsync
 google-chrome@beta
 google-chrome@canary
@@ -609,6 +640,7 @@ gpxsee
 gqrx
 graalvm-jdk@21
 grammarly-desktop
+gramps
 grandtotal
 granola
 graphicconverter
@@ -629,12 +661,15 @@ hapigo
 hashbackup
 hazel
 hbuilderx
+helio
+helpwire-operator
 heptabase
 herd
 heroic
 heynote
 hhkb-studio
 hides
+highlight
 hightop
 holavpn
 home-assistant
@@ -669,6 +704,7 @@ imhex
 inav-configurator
 inkdown
 inkdrop
+input-source-pro
 inso
 inso@beta
 insomnia
@@ -717,6 +753,7 @@ jottacloud
 jprofiler
 julia
 julia@lts
+jump
 jump-desktop-connect
 jumpcloud-password-manager
 jumpshare
@@ -727,6 +764,7 @@ k6-studio
 kaleidoscope
 kando
 katalon-studio
+kate
 kdenlive
 kdiff3
 kdrive
@@ -752,6 +790,7 @@ knime
 kodelife
 kopiaui
 kotlin-native
+kreya
 krisp
 kunkun
 label-live
@@ -822,6 +861,7 @@ maccy
 macdroid
 macfuse
 macfuse@dev
+macgamestore
 macloggerdx
 macloggerdx@beta
 macpilot
@@ -846,6 +886,7 @@ marginnote
 marked
 markedit
 marsedit
+marvin
 mathpix-snipping-tool
 mattermost
 mcbopomofo
@@ -860,6 +901,7 @@ mega
 megacmd
 megasync
 megazeux
+meld
 mellel
 melodics
 memory-cleaner
@@ -867,6 +909,7 @@ mendeley-reference-manager
 menubarx
 meridiem
 merlin-project
+meru
 messenger
 meta-quest-developer-hub
 metashape
@@ -948,6 +991,7 @@ motion
 motu-m-series
 mountain-duck
 mouseless
+mouseless@preview
 mp3tag
 mplab-xc32
 mqttx
@@ -1008,6 +1052,7 @@ notebooks
 notesnook
 notion
 notion-calendar
+notion-mail
 nova
 novabench
 nozbe
@@ -1033,14 +1078,17 @@ olympus
 omnifocus
 omnigraffle
 omnioutliner
+omniplan
 onecast
 onedrive
 onekey
 onlyoffice
 ontime
+onyx
 opal-composer
 openaudible
 opencat
+opencloud
 opencore-configurator
 opencore-patcher
 openlens
@@ -1090,6 +1138,7 @@ paletro
 panoply
 parallels
 parallels-virtualization-sdk
+pareto-security
 parsehub
 pastenow
 path-finder
@@ -1132,6 +1181,7 @@ plus42-decimal
 pocket-casts
 podpisuj
 poe
+poedit
 pokemon-tcg-live
 poker-copilot
 polymail
@@ -1197,6 +1247,7 @@ qlab
 qlc+
 qlmarkdown
 qlvideo
+qobuz
 qownnotes
 qq
 qqlive
@@ -1268,6 +1319,7 @@ rio
 ripme
 rippling
 rive
+reverso
 rivet
 rize
 roam
@@ -1287,6 +1339,7 @@ royal-tsx@beta
 rstudio
 rstudio@daily
 rubymine
+runjs
 rustdesk
 rustrover
 sabnzbd
@@ -1301,6 +1354,7 @@ schism-tracker
 screaming-frog-log-file-analyser
 screaming-frog-seo-spider
 screen-studio
+screenflick
 screenmemory
 screens-assist
 screens-connect
@@ -1333,6 +1387,7 @@ shadow
 shadow@beta
 shadowsocksx-ng
 shapr3d
+sharemouse
 shattered-pixel-dungeon
 shearwater-cloud
 sherlock
@@ -1354,9 +1409,8 @@ sitesucker-pro
 siyuan
 sketch
 sketch@beta
+sketchup
 skim
-skype
-skype@preview
 slab
 slack
 slack-cli
@@ -1406,6 +1460,7 @@ sqlcl
 sqlitestudio
 sqlpro-for-sqlite
 squash
+stability-matrix
 standard-notes
 starsector
 startupfolder
@@ -1449,13 +1504,19 @@ syncthing
 synology-drive
 syntax-highlight
 tabby
+tableau
+tableau-prep
+tableau-public
+tableau-reader
 tableflip
 tableplus
 tabtab
 tageditor
 tagspaces
 tailscale
+tandem
 taskade
+taskbar
 tastytrade
 teamviewer
 teamviewermeeting
@@ -1467,8 +1528,10 @@ teleport
 teleport-connect
 tella
 temurin
+temurin@11
 temurin@17
 temurin@21
+temurin@8
 tenable-nessus-agent
 tencent-docs
 tencent-lemon
@@ -1497,6 +1560,7 @@ ths
 thunder
 thunderbird
 thunderbird@beta
+thunderbird@daily
 thunderbird@esr
 ti-connect-ce
 ticktick
@@ -1526,6 +1590,7 @@ touch-portal
 touchdesigner
 touchosc
 tower
+tqsl
 trader-workstation
 tradingview
 trae
@@ -1563,6 +1628,7 @@ ueli
 uhk-agent
 ui
 ui-tars
+ukelele
 ultimaker-cura
 ultimate
 ultrastardeluxe
@@ -1615,6 +1681,7 @@ viz
 vk-calls
 vlc@nightly
 vnc-viewer
+vnote
 voiceink
 volanta
 vpn-tracker-365
@@ -1627,6 +1694,7 @@ wacom-tablet
 wakatime
 warcraft-logs-uploader
 warp
+warp@preview
 warzone-2100
 wasabi-wallet
 watchfacestudio
@@ -1666,6 +1734,8 @@ wirecast
 wireframe-sketcher
 wireshark
 wireshark-chmodbpf
+wiso-steuer-2022
+wiso-steuer-2023
 wiso-steuer-2024
 wiso-steuer-2025
 wizcli
@@ -1694,6 +1764,7 @@ xnviewmp
 xpra
 yaak
 yaak@beta
+yandex
 yandex-cloud-cli
 yandex-music
 yate
@@ -1711,8 +1782,8 @@ zap
 zappy
 zed
 zed@preview
-zen-browser
-zen-browser@twilight
+zen
+zen@twilight
 zeplin
 zettlr
 zight
@@ -1726,3 +1797,4 @@ zotero
 zotero@beta
 zspace
 zulu
+zulufx

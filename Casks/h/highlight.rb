@@ -1,0 +1,29 @@
+cask "highlight" do
+  arch arm: "arm64", intel: "x64"
+  arch_suffix = on_arch_conditional arm: "-arm64"
+
+  version "1.1.85"
+  sha256 arm:   "29289f1c8e3bcb5cbec9d8f86f6c495598ce2c41f54d4401e23f1f9f3467ad43",
+         intel: "a6ee4de055b4c0898331193b4e17fc19c3233694deefac60e0b9fabce821b960"
+
+  url "https://cdn.highlightai.com/releases/darwin/#{arch}/Highlight-#{version}#{arch_suffix}.dmg"
+  name "Highlight"
+  desc "Context-aware AI assistant"
+  homepage "https://highlightai.com/"
+
+  livecheck do
+    url "https://cdn.highlightai.com/releases/darwin/#{arch}/latest-mac.yml"
+    strategy :electron_builder
+  end
+
+  auto_updates true
+  depends_on macos: ">= :big_sur"
+
+  app "Highlight.app"
+
+  zap trash: [
+    "~/Library/Application Support/Highlight",
+    "~/Library/Preferences/tv.medal.highlight.plist",
+    "~/Library/Saved Application State/tv.medal.highlight.savedState",
+  ]
+end
