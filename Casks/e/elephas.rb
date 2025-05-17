@@ -1,6 +1,6 @@
 cask "elephas" do
-  version "11.094,1109"
-  sha256 "fa23247deab22698e16863809eaaf4b79c0ac48fe1763f80a929575dbb3587f2"
+  version "11.1087,11_1087"
+  sha256 "6f23b3a02f0a605ba86358a55c3e72d13eb2a49b872fa636e3062696c43f6231"
 
   url "https://assets.elephas.app/Elephas_#{version.csv.second}.dmg"
   name "Elephas"

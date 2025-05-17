@@ -1,6 +1,6 @@
 cask "nordvpn" do
-  version "8.36.1"
-  sha256 "987a9b681ff578e4ba12cd05c3dfd267f62d353cd05d6833320e692123a51b53"
+  version "8.38.1"
+  sha256 "f1b30484bb840c15eb7466088cd5fa317eff3bc617a306edcf530573052f948e"
 
   url "https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/#{version}/NordVPN.pkg",
       verified: "downloads.nordcdn.com/apps/macos/generic/"
@@ -39,7 +39,7 @@ cask "nordvpn" do
     "~/Library/Caches/com.nordvpn.macos",
     "~/Library/Containers/com.nordvpn.NordVPN.*",
     "~/Library/Cookies/com.nordvpn.macos.binarycookies",
-    "~/Library/Logs/NordVPN/",
+    "~/Library/Logs/NordVPN",
     "~/Library/Preferences/com.nordvpn.macos.plist",
     "~/Library/Saved Application State/com.nordvpn.macos.savedState",
   ]

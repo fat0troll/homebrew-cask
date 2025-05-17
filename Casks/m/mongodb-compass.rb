@@ -1,9 +1,9 @@
 cask "mongodb-compass" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.46.0"
-  sha256 arm:   "27db5c6feaa2497133a72074f03ddc557429704fcd26922b9bfbcca6188d3d7e",
-         intel: "f1c3f1b801450eca8a5b9bceb35aba9293602028847ff2db1e2d931b96414d1a"
+  version "1.46.2"
+  sha256 arm:   "780f1e9f8307e4df1cdb5b1c2f550e58184307de36f83ad44c0830c75252e40c",
+         intel: "6aeb7a1ed260feacfb8d91e64f19286616ca447488b94ef933091a702e7b7938"
 
   url "https://downloads.mongodb.com/compass/mongodb-compass-#{version}-darwin-#{arch}.dmg"
   name "MongoDB Compass"
@@ -31,7 +31,7 @@ cask "mongodb-compass" do
   zap trash: [
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mongodb.compass.sfl*",
     "~/Library/Application Support/MongoDB Compass",
-    "~/Library/Caches/MongoDB Compass/",
+    "~/Library/Caches/MongoDB Compass",
     "~/Library/Preferences/com.mongodb.compass.plist",
     "~/Library/Saved Application State/com.mongodb.compass.savedState",
   ]

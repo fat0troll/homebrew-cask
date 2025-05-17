@@ -1,11 +1,12 @@
 cask "flowvision" do
-  version "1.6.1"
-  sha256 "f8fbffe798d34bb41fec54fe82511829d48aaddf4cb2ecfb033ed1441b6b846a"
+  version "1.6.3"
+  sha256 "27ccb4531a7e5afe7fa7ced87422096986dd859bd7db88f7776a64f0f85802b2"
 
-  url "https://github.com/netdcy/FlowVision/releases/download/#{version}/FlowVision.#{version}.zip"
+  url "https://github.com/netdcy/FlowVision/releases/download/#{version}/FlowVision.#{version}.zip",
+      verified: "github.com/netdcy/FlowVision/"
   name "FlowVision"
   desc "Waterfall-style image viewer"
-  homepage "https://github.com/netdcy/FlowVision"
+  homepage "https://flowvision.app/"
 
   livecheck do
     url :url

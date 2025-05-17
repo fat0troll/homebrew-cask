@@ -1,6 +1,6 @@
 cask "electricbinary" do
-  version "9.07"
-  sha256 "3e383f673183265700e0c13a5f7b1d3348247465c3d8817c845d62e4c92d86ce"
+  version "9.08.1"
+  sha256 "fcfd8b543aa0124f764945f2eba3a2c76dd7bd8db403dee2b1a3ddbc70875e5a"
 
   url "https://ftp.gnu.org/gnu/electric/electricBinary-#{version}.jar"
   name "Electric VLSI Design System"
