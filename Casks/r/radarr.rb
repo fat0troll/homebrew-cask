@@ -1,9 +1,9 @@
 cask "radarr" do
   arch arm: "arm64", intel: "x64"
 
-  version "5.21.1.9799"
-  sha256 arm:   "37c0fe1136b42db034b9e1332865f1495d237c2b68c6f2b0fe1733eb4d9d3b92",
-         intel: "74172ab05021d39ca868f4e0e89b2292daf5c170a4793caa885920d15258626f"
+  version "5.23.3.9987"
+  sha256 arm:   "fe65f5bfc5da3168de61a66cba10d6688bf1c9aaf9f5fda1364fe3c2d16ba636",
+         intel: "ac5eca5c97944a0c536a44b8d2ae36579c3a73dad458f0762be3d969754aed10"
 
   url "https://github.com/Radarr/Radarr/releases/download/v#{version}/Radarr.master.#{version}.osx-app-core-#{arch}.zip",
       verified: "github.com/Radarr/Radarr/"
@@ -12,8 +12,10 @@ cask "radarr" do
   homepage "https://radarr.video/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://radarr.servarr.com/v1/update/master/changes?os=osx&arch=#{arch}"
+    strategy :json do |json|
+      json.map { |item| item["version"] }
+    end
   end
 
   auto_updates true

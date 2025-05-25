@@ -1,6 +1,6 @@
 cask "nextcloud-vfs" do
-  version "3.16.2"
-  sha256 "530b7b242dda612981d2af144a26808f5ea7a51b86cc87893045feb8c1d607a3"
+  version "3.16.4"
+  sha256 "99c8b664be2ee0ce5517befa466320c2f8cead135d07ed2e23ec08105f8dff5c"
 
   url "https://download.nextcloud.com/desktop/releases/Mac/Installer/Nextcloud-#{version}-macOS-vfs.pkg"
   name "Nextcloud Virtual Files"
