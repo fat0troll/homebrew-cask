@@ -1,6 +1,6 @@
 cask "granola" do
-  version "5.329.0"
-  sha256 "2a87a79fe01d4edb1b86827a06bbb8a26099dddc08171ecb12ce730fb4cd6866"
+  version "6.32.0"
+  sha256 "79ddbe7f5e15f2520e0ca2c6b46d2e0ecfdb9afa6782c68668abf2e5392bc49e"
 
   url "https://dr2v7l5emb758.cloudfront.net/#{version}/Granola-#{version}-mac-universal.dmg",
       verified: "dr2v7l5emb758.cloudfront.net/"
@@ -9,8 +9,8 @@ cask "granola" do
   homepage "https://www.granola.ai/"
 
   livecheck do
-    url "https://go.granola.so/download"
-    strategy :header_match
+    url "https://api.granola.ai/v1/check-for-update/latest-mac.yml"
+    strategy :electron_builder
   end
 
   auto_updates true

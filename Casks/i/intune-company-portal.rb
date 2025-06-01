@@ -1,6 +1,6 @@
 cask "intune-company-portal" do
-  version "5.2502.1"
-  sha256 "72f773eec677deff1ca4440d6cb6c0b3c0e669c50c4966a56205c62e2f3f100b"
+  version "5.2504.1"
+  sha256 "20a51177d0669ca993d3cda41d1fc838f47dd7780687a8f0287b18dcc2ef341e"
 
   url "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_#{version}-Upgrade.pkg"
   name "Company Portal"
@@ -41,18 +41,18 @@ cask "intune-company-portal" do
             delete:    "/Applications/Company Portal.app"
 
   zap trash: [
-    "~/Library/Application Scripts/com.microsoft.CompanyPortalMac.ssoextension/",
-    "~/Library/Application Support/com.microsoft.CompanyPortalMac/",
+    "~/Library/Application Scripts/com.microsoft.CompanyPortalMac.ssoextension",
+    "~/Library/Application Support/com.microsoft.CompanyPortalMac",
     "~/Library/Caches/com.microsoft.CompanyPortalMac",
-    "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.CompanyPortalMac/",
+    "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.CompanyPortalMac",
     "~/Library/Caches/CompanyPortalCache",
-    "~/Library/Containers/com.microsoft.CompanyPortalMac.ssoextension/",
+    "~/Library/Containers/com.microsoft.CompanyPortalMac.ssoextension",
+    "~/Library/HTTPStorages/com.microsoft.CompanyPortalMac",
     "~/Library/HTTPStorages/com.microsoft.CompanyPortalMac.binarycookies",
-    "~/Library/HTTPStorages/com.microsoft.CompanyPortalMac/",
     "~/Library/Logs/Company Portal/*",
     "~/Library/Preferences/com.microsoft.CompanyPortalMac.plist",
     "~/Library/Preferences/group.com.microsoft.CompanyPortalMac.plist",
-    "~/Library/Saved Application State/com.microsoft.CompanyPortalMac.savedState/",
-    "~/Library/WebKit/com.microsoft.CompanyPortalMac/",
+    "~/Library/Saved Application State/com.microsoft.CompanyPortalMac.savedState",
+    "~/Library/WebKit/com.microsoft.CompanyPortalMac",
   ]
 end

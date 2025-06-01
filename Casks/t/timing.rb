@@ -1,6 +1,6 @@
 cask "timing" do
-  version "2025.2.5"
-  sha256 "52001e3add100912bf28b7f81b371dee89a0008f6a252b27fcf06fe8a71f0d1d"
+  version "2025.3.2"
+  sha256 "bb275d0dbb740f62705a0636fe1b60ab32ba7c8e7fbf3e3432f61012dede980b"
 
   url "https://updates.timingapp.com/download/Timing-#{version}.dmg"
   name "Timing"

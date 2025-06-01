@@ -1,6 +1,6 @@
 cask "ubiquiti-unifi-controller" do
-  version "9.0.114"
-  sha256 "541cb18e993e961330a793aff5b9590af4b16fe513a49e6acf03a3ee4a7c5da6"
+  version "9.1.120"
+  sha256 "5becfe3bdfc752dc5fed69272667d2426b617cc381a3b6bc4daa177d7f1c320a"
 
   url "https://dl.ubnt.com/unifi/#{version}/UniFi-Network-Server.dmg",
       verified: "dl.ubnt.com/"

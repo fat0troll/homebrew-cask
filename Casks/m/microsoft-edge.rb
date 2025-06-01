@@ -1,6 +1,6 @@
 cask "microsoft-edge" do
-  version "135.0.3179.73,62b79ad0-71e3-4583-be18-e85c2546f611"
-  sha256 "c82e8845b49c0bf44ad88a4134b9baf0fc078583096d60e6d8992024088c0054"
+  version "137.0.3296.52,27a27010-8843-4b14-a424-5cc2bd4799e3"
+  sha256 "09cf7c6c7bfd06760f4a983403a5576b0727a857f2384cb57e2ea06911410ff5"
 
   url "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/#{version.csv.second}/MicrosoftEdge-#{version.csv.first}.dmg"
   name "Microsoft Edge"
@@ -28,6 +28,7 @@ cask "microsoft-edge" do
   zap trash: [
         "~/Library/Application Scripts/com.microsoft.edgemac.wdgExtension",
         "~/Library/Application Support/Microsoft Edge",
+        "~/Library/Application Support/Microsoft/EdgeUpdater",
         "~/Library/Caches/com.microsoft.edgemac",
         "~/Library/Caches/com.microsoft.EdgeUpdater",
         "~/Library/Caches/Microsoft Edge",
@@ -41,7 +42,7 @@ cask "microsoft-edge" do
         "~/Library/WebKit/com.microsoft.edgemac",
       ],
       rmdir: [
-        "/Library/Application Support/Microsoft",
+        "~/Library/Application Support/Microsoft",
         "~/Library/Microsoft",
       ]
 end

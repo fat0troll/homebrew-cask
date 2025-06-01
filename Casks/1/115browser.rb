@@ -1,9 +1,9 @@
 cask "115browser" do
   arch arm: "arm64", intel: "x64"
 
-  version "35.15.0.2"
-  sha256 arm:   "590b7c379ff23df3b828c34301a449c2ad6f61aa18f437dcd4516f4023d110ac",
-         intel: "8bc32ba30c4983c544bb9de01ae49d2c038c30eda80143bedfe3e2f3b07e7c55"
+  version "35.22.0"
+  sha256 arm:   "92ae777388e38c2dca2a80155f04154cade81a0a61ec9f1e1f7fe53673fab343",
+         intel: "495ae76348e9f59465634e59bfec9692285d7b7e3e846f3e78075ae63e64cb52"
 
   url "https://down.115.com/client/mac/115br_v#{version}_#{arch}.dmg"
   name "115Browser"

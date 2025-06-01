@@ -1,11 +1,12 @@
 cask "kate" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "24.12,9168"
-  sha256 arm:   "bbff57a3ad6bd028b2ae30b3e2861abd2008d05b853f6a8d0353e3e18818906a",
-         intel: "e4039245989d5af32a7acf4af6c3fd54b5d8eb31e7b38f29accba7bd25263bff"
+  version "25.04,9515"
+  sha256 arm:   "5575b5b34779563369386ec4292230273b10d623a94deff35c4c63836a323a6f",
+         intel: "04bc9f2220114956a17b0826fc8f07066d27df1d8c635c321e5276ea4e4e6019"
 
-  url "https://cdn.kde.org/ci-builds/utilities/kate/release-#{version.csv.first}/macos-#{arch}/kate-release_#{version.csv.first}-#{version.csv.second}-macos-clang-#{arch}.dmg", verified: "cdn.kde.org/ci-builds/utilities/kate/"
+  url "https://cdn.kde.org/ci-builds/utilities/kate/release-#{version.csv.first}/macos-#{arch}/kate-release_#{version.csv.first}-#{version.csv.second}-macos-clang-#{arch}.dmg",
+      verified: "cdn.kde.org/ci-builds/utilities/kate/"
   name "Kate"
   desc "Multi-document editor by KDE"
   homepage "https://kate-editor.org/"
@@ -30,7 +31,9 @@ cask "kate" do
     end
   end
 
-  app "Kate.app"
+  depends_on macos: ">= :monterey"
+
+  app "kate.app"
   shimscript = "#{staged_path}/kate.wrapper.sh"
   binary shimscript, target: "kate"
 
