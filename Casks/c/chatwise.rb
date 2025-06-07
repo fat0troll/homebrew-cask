@@ -1,9 +1,9 @@
 cask "chatwise" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.8.34"
-  sha256 arm:   "c5f19de6b7ee8a7ce338fefbd870b43a82e8a8a41db96aee576bc9c51ca07cf7",
-         intel: "e48f3da7ff69ef2f271cecc9779016a131df6cad51bd45314ecdd7a5fa829cf7"
+  version "0.8.61"
+  sha256 arm:   "ef0e5153a9c114ef211f6c64205de7c29f7a5bbb84716b875f802cb41b893823",
+         intel: "35b781cc93ec22de0ef22e3cd509c043f62b3faf1da521616090b3a8f1a11d14"
 
   url "https://github.com/egoist/chatwise-releases/releases/download/v#{version}/ChatWise_#{version}_#{arch}.dmg",
       verified: "github.com/egoist/chatwise-releases/"
@@ -12,8 +12,10 @@ cask "chatwise" do
   homepage "https://chatwise.app/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://chatwise.app/api/trpc/getReleases"
+    strategy :json do |json|
+      json.dig("result", "data")&.map { |item| item["tag"]&.tr("v", "") }
+    end
   end
 
   auto_updates true
