@@ -1,9 +1,9 @@
 cask "rustrover" do
   arch arm: "-aarch64"
 
-  version "2024.3.8,243.26053.64"
-  sha256 arm:   "c9c02c89479d68c57516525f83dd7482ac88459bd4e42cff53176ad1bf5008ea",
-         intel: "a293503e294582c8a59d6569ba9397155ae1faf0cb868a370be7aeb89ada83e8"
+  version "2025.1.3,251.25410.170"
+  sha256 arm:   "552145a2d550cfcb2dc59530605dbe4af179102a99dab4b69acb80d9504d0ef3",
+         intel: "2ed48a8d1f0afb13a5a2d59a1f478128bff406028f82290db1f9b2847a1e6ade"
 
   url "https://download.jetbrains.com/rustrover/RustRover-#{version.csv.first}#{arch}.dmg"
   name "RustRover"
@@ -27,7 +27,16 @@ cask "rustrover" do
   depends_on macos: ">= :high_sierra"
 
   app "RustRover.app"
-  binary "#{appdir}/RustRover.app/Contents/MacOS/rustrover"
+  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
+  shimscript = "#{staged_path}/rustrover.wrapper.sh"
+  binary shimscript, target: "rustrover"
+
+  preflight do
+    File.write shimscript, <<~EOS
+      #!/bin/sh
+      exec '#{appdir}/RustRover.app/Contents/MacOS/rustrover' "$@"
+    EOS
+  end
 
   zap trash: [
     "~/Library/Application Support/JetBrains/RustRover#{version.major_minor}",

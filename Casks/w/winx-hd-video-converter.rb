@@ -12,10 +12,12 @@ cask "winx-hd-video-converter" do
     regex(/for\s*Mac\s*v?(\d+(?:\.\d+)+)/i)
   end
 
+  no_autobump! because: :requires_manual_review
+
   app "Winx HD Video Converter for Mac.app"
 
   zap trash: [
-    "~/Library/Caches/com.winxdvd.hdvideoconverterformac/",
+    "~/Library/Caches/com.winxdvd.hdvideoconverterformac",
     "~/Library/Preferences/com.winxdvd.hdvideoconverterformac.plist",
   ]
 

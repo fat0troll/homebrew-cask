@@ -1,9 +1,9 @@
 cask "jetbrains-gateway" do
   arch arm: "-aarch64"
 
-  version "2024.3.3,243.24978.56"
-  sha256 arm:   "846eb50e707231e34bc9ad467a5237a43a865061b10a1be6b4abe4a0cc08161b",
-         intel: "75cc932a4d7bd2f28f641e21cfc0667ce645dd38109b37cbe3621321f1eb3a2d"
+  version "2025.1.2,251.26094.128"
+  sha256 arm:   "1cf7dcdbb5408c9c7711a436e4c763df147ce332ce2e1f260fa246af87b0a58e",
+         intel: "b4e45266159352598d0cbd7b03283cb53260d20866ca77d57a43150e81cf3d09"
 
   url "https://download.jetbrains.com/idea/gateway/JetBrainsGateway-#{version.csv.first}#{arch}.dmg"
   name "jetbrains-gateway"

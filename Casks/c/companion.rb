@@ -2,11 +2,11 @@ cask "companion" do
   arch arm: "arm64", intel: "x64"
   livecheck_arch = on_arch_conditional arm: "arm", intel: "intel"
 
-  version "3.5.3,7770,df70e20b"
-  sha256 arm:   "980a6976b217865cda8f47ccc2c5f1f31c6b1b4a94475c8a8b953ccde8a731ec",
-         intel: "3abf3604c804a3378e10d9064f73c78395c412bdb6f52d7c9bb44ed2b23d2288"
+  version "4.0.1,8061,b1c1c1f4dd"
+  sha256 arm:   "aedc00a205e2ef740f04230860b7fbb6f4a23d6373cf7e754bcb3c4586599b9f",
+         intel: "b7460df9143d7a7173e9182a6ab7b4cd53c19eb14e691610161c5b5372731923"
 
-  url "https://s3.bitfocus.io/builds/companion/companion-mac-#{arch}-#{version.csv.first}+#{version.csv.second}-stable-#{version.csv.third}.dmg"
+  url "https://s4.bitfocus.io/builds/companion/companion-mac-#{arch}-#{version.csv.first}+#{version.csv.second}-stable-#{version.csv.third}.dmg"
   name "Bitfocus Companion"
   desc "Streamdeck extension and emulation software"
   homepage "https://bitfocus.io/companion"

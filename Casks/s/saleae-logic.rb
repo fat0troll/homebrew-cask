@@ -1,9 +1,9 @@
 cask "saleae-logic" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.4.22"
-  sha256 arm:   "9adcede6fa904898618274e0cdde3fcb055ab03aec022b2d602e32eacb87e6c7",
-         intel: "eb14c8c95771d2770f5f24ea15e23dd5939b9e6fa3adaeeb79097a24571a3e56"
+  version "2.4.29"
+  sha256 arm:   "17e601e84b3cb810c80f4e8d9cc22afad9e3637acddafaded813fbae7f427f70",
+         intel: "9d91ae632d55bc72d385db6002cf1602fb61f2361202a49affd7ea169f6395ac"
 
   url "https://downloads#{version.major}.saleae.com/logic#{version.major}/Logic-#{version}-macos-#{arch}.zip"
   name "Saleae Logic2"

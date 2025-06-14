@@ -1,6 +1,6 @@
 cask "c0re100-qbittorrent" do
-  version "5.0.4.10"
-  sha256 "f0c9090238b361a5720e64061471d8a4ed0b0c1b9eecf063d4d8e6635120f3b9"
+  version "5.1.0.11"
+  sha256 "e0bc679be0b59d7318936ec4cc76073e0cbef8ae87d06829512154633f4a3fa5"
 
   url "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-#{version}/qBittorrent-Enhanced-Edition-release-#{version}-macOS-universal.dmg"
   name "qBittorrent Enhanced Edition"

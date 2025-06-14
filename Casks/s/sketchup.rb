@@ -1,6 +1,6 @@
 cask "sketchup" do
-  version "2025.0.574.244"
-  sha256 "a1966ae2adc77d82211798457cb1bddbdfe28ac1806fe3b32c43208a5c932438"
+  version "2025.0.659.288"
+  sha256 "2e724ee052daba894c222ba72da01facd6e26cf3a533c16463202c906fdde30e"
 
   url "https://download.sketchup.com/SketchUp-#{version.dots_to_hyphens}.dmg"
   name "SketchUp"
@@ -9,13 +9,9 @@ cask "sketchup" do
 
   livecheck do
     url "https://www.sketchup.com/download/all"
-    strategy :page_match
-    regex(/SketchUp-(\d+(?:-\d+)+)\.dmg/i)
+    regex(/href=.*?SketchUp[._-]v?(\d+(?:[.-]\d+)+)\.dmg/i)
     strategy :page_match do |page, regex|
-      match = page.scan(regex).map { |v| v.first.tr("-", ".") }
-      next if match.blank?
-
-      match
+      page.scan(regex).map { |match| match[0].tr("-", ".") }
     end
   end
 

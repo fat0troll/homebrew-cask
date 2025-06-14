@@ -1,9 +1,9 @@
 cask "webstorm" do
   arch arm: "-aarch64"
 
-  version "2024.3.5,243.26053.12"
-  sha256 arm:   "67f1898fcf936f22842a669ebe1cc746d8ae9069086dcf66efa2d86d73e78d5c",
-         intel: "6d7d3c7883f1344a08d39c4060dcd32c28039d7217549c88d703e65517be7898"
+  version "2025.1.2,251.26094.131"
+  sha256 arm:   "298d53fcd1a979e6910f97d9a29ac9bc0ed12386838a93a6d279bb415cf4708f",
+         intel: "c33853a8d8a2dd47ce3a795202e2d802a9f1888b2c998c91cdfc9bc66f9bb19a"
 
   url "https://download.jetbrains.com/webstorm/WebStorm-#{version.csv.first}#{arch}.dmg"
   name "WebStorm"
@@ -27,7 +27,16 @@ cask "webstorm" do
   depends_on macos: ">= :high_sierra"
 
   app "WebStorm.app"
-  binary "#{appdir}/WebStorm.app/Contents/MacOS/webstorm"
+  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
+  shimscript = "#{staged_path}/webstorm.wrapper.sh"
+  binary shimscript, target: "webstorm"
+
+  preflight do
+    File.write shimscript, <<~EOS
+      #!/bin/sh
+      exec '#{appdir}/WebStorm.app/Contents/MacOS/webstorm' "$@"
+    EOS
+  end
 
   zap trash: [
     "~/Library/Application Support/JetBrains/WebStorm#{version.major_minor}",

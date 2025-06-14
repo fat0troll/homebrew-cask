@@ -1,6 +1,6 @@
 cask "ghidra" do
-  version "11.3.1,20250219"
-  sha256 "bcda0a9de8993444766cc255964c65c042b291ddaf6c50d654e316e442b441fa"
+  version "11.3.2,20250415"
+  sha256 "99d45035bdcc3d6627e7b1232b7b379905a9fad76c772c920602e2b5d8b2dac2"
 
   url "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_#{version.csv.first}_build/ghidra_#{version.csv.first}_PUBLIC_#{version.csv.second}.zip",
       verified: "github.com/NationalSecurityAgency/ghidra/"
@@ -20,6 +20,8 @@ cask "ghidra" do
       end
     end
   end
+
+  no_autobump! because: :requires_manual_review
 
   new_staged_path = "#{caskroom_path}/#{version.csv.first}-#{version.csv.second}"
 

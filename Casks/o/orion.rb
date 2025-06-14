@@ -1,8 +1,8 @@
 cask "orion" do
-  version "0.99,132.0.3"
+  version "0.99,134"
 
   on_mojave :or_older do
-    sha256 "55c056f860a481cbe6877eed14ad83fb90a69d49357e18e47f1eb7598fc2fad1"
+    sha256 "97fc6544a0a8f4f3f84bb2443758177b50b8faa0a33dbfc57c4717f81a6b9812"
 
     url "https://cdn.kagi.com/updates/10_14/#{version.csv.second}.zip"
 
@@ -10,11 +10,9 @@ cask "orion" do
       url "https://cdn.kagi.com/updates/10_14/appcast.xml"
       strategy :sparkle
     end
-
-    depends_on macos: :mojave
   end
   on_catalina do
-    sha256 "0e10c2391851607aed3ef730efdb658a61dfd01c96bce885a54f3d0d9419ffe8"
+    sha256 "6433ad84a75a73ae83267695c9cc5eb6e8068f28034d1fce9e76429c55230b10"
 
     url "https://cdn.kagi.com/updates/10_15/#{version.csv.second}.zip"
 
@@ -22,11 +20,9 @@ cask "orion" do
       url "https://cdn.kagi.com/updates/10_15/appcast.xml"
       strategy :sparkle
     end
-
-    depends_on macos: :catalina
   end
   on_big_sur do
-    sha256 "600032f8dded874cddba62ef0e061d9e76581ae7082c5de4e64ec3953ad76fc2"
+    sha256 "4dfa80b65ca1006be575fe4e5577c4c4898a909aab1ca2749009edb0fa26ab2f"
 
     url "https://cdn.kagi.com/updates/11_0/#{version.csv.second}.zip"
 
@@ -34,11 +30,9 @@ cask "orion" do
       url "https://cdn.kagi.com/updates/11_0/appcast.xml"
       strategy :sparkle
     end
-
-    depends_on macos: :big_sur
   end
   on_monterey do
-    sha256 "1e38b026b123d0ae7aad927f9e874eb54a8ef33fbd46471084dc90f94652ccda"
+    sha256 "6c19b6b90eed4210db20a95193e30709a797199091f0f95919e79e478f617da4"
 
     url "https://cdn.kagi.com/updates/12_0/#{version.csv.second}.zip"
 
@@ -46,11 +40,9 @@ cask "orion" do
       url "https://cdn.kagi.com/updates/12_0/appcast.xml"
       strategy :sparkle
     end
-
-    depends_on macos: :monterey
   end
   on_ventura do
-    sha256 "4af7f2a2e8a70eee1d2f707a457daca8e81b41271b80ba73ae1356b42377052d"
+    sha256 "f06459a3200043f4e38ec8af2489ffeddc11bfb093f2985eadeb171be4eeec4e"
 
     url "https://cdn.kagi.com/updates/13_0/#{version.csv.second}.zip"
 
@@ -58,11 +50,9 @@ cask "orion" do
       url "https://cdn.kagi.com/updates/13_0/appcast.xml"
       strategy :sparkle
     end
-
-    depends_on macos: :ventura
   end
   on_sonoma do
-    sha256 "951e96601f347f79f401f2049ab0626fca9018b9a8bc4c89b6d9871a61240928"
+    sha256 "4f0ba72398a599f44e9d5fafc2f667a279b65cfdd38e5c11b692e531f4d2cefe"
 
     url "https://cdn.kagi.com/updates/14_0/#{version.csv.second}.zip"
 
@@ -70,11 +60,9 @@ cask "orion" do
       url "https://cdn.kagi.com/updates/14_0/appcast.xml"
       strategy :sparkle
     end
-
-    depends_on macos: :sonoma
   end
   on_sequoia :or_newer do
-    sha256 "f250489948172319c26e8ebcae9b47da228659e5fd928b2496ec8f78ff96ebd8"
+    sha256 "91f0261e8b662da378b1c8fb3fd42529afe64af9b049f5c32c9c5bc7baa23428"
 
     url "https://cdn.kagi.com/updates/15_0/#{version.csv.second}.zip"
 
@@ -82,15 +70,16 @@ cask "orion" do
       url "https://cdn.kagi.com/updates/15_0/appcast.xml"
       strategy :sparkle
     end
-
-    depends_on macos: ">= :sequoia"
   end
 
   name "Orion Browser"
   desc "WebKit based web browser"
   homepage "https://browser.kagi.com/"
 
+  no_autobump! because: :requires_manual_review
+
   auto_updates true
+  depends_on macos: ">= :mojave"
 
   app "Orion.app"
 

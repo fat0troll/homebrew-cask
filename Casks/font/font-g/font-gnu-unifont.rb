@@ -1,6 +1,6 @@
 cask "font-gnu-unifont" do
-  version "16.0.02"
-  sha256 "f128ec8763f2264cd1fa069f3195631c0b1365366a689de07b1cb82387aba52d"
+  version "16.0.04"
+  sha256 "2bd4e4679757126f48e1bf2c1be40b09aa92162bfedda4683ce5fbc70a2a5972"
 
   url "https://ftp.gnu.org/gnu/unifont/unifont-#{version}/unifont-#{version}.tar.gz",
       verified: "ftp.gnu.org/gnu/unifont/"

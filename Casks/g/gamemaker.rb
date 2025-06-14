@@ -9,9 +9,11 @@ cask "gamemaker" do
   homepage "https://gamemaker.io/"
 
   livecheck do
-    url "https://gamemaker.io/en/download/mac/monthly/GameMaker.pkg"
-    strategy :header_match
+    url "https://gms.yoyogames.com/update-mac.rss"
+    strategy :sparkle
   end
+
+  no_autobump! because: :requires_manual_review
 
   pkg "GameMaker-#{version}.pkg"
 

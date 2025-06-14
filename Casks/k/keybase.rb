@@ -2,12 +2,12 @@ cask "keybase" do
   arch arm: "arm64-"
 
   on_arm do
-    version "6.5.0,20241007140341,f10651d043"
-    sha256 "be6938cc738e5bfa38d4cfacbf202085892231880cbc98f39675ecd625e989fd"
+    version "6.5.1,20250422141116,19f9cfeddb"
+    sha256 "085fa763b6b6648218274c7a0080b0a810ec750578d0c432f0b682ad5cd0c370"
   end
   on_intel do
-    version "6.5.0,20241007134954,f10651d043"
-    sha256 "3fa2755d5ab50099ce48b25dc51b3a1b45012e4b82a2e63809107c4d090753ec"
+    version "6.5.2,20250428134940,6652519c3d"
+    sha256 "e790bbebc4c83ccd26c84e58e9a2f8faca0518c9a81846a3149f08b3ae9ffa09"
   end
 
   url "https://prerelease.keybase.io/darwin-#{arch}updates/Keybase-#{version.csv.first}-#{version.csv.second}%2B#{version.csv.third}.zip"
@@ -21,6 +21,8 @@ cask "keybase" do
       json["version"]&.tr("-+", ",")
     end
   end
+
+  no_autobump! because: :requires_manual_review
 
   auto_updates true
   depends_on macos: ">= :catalina"

@@ -12,13 +12,15 @@ cask "coderunner" do
     strategy :sparkle, &:short_version
   end
 
+  no_autobump! because: :requires_manual_review
+
   auto_updates true
   depends_on macos: ">= :catalina"
 
   app "CodeRunner.app"
 
   zap trash: [
-    "~/Library/Application Scripts/com.krill.CodeRunner.CodeRunnerThumbs/",
+    "~/Library/Application Scripts/com.krill.CodeRunner.CodeRunnerThumbs",
     "~/Library/Application Support/CodeRunner",
     "~/Library/Autosave Information/com.krill.CodeRunner.plist",
     "~/Library/Caches/com.krill.CodeRunner",

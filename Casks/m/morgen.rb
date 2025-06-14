@@ -1,9 +1,9 @@
 cask "morgen" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.6.11,2504034njqfbmk4"
-  sha256 arm:   "59d161aa6622a30e47117885061c1da2059d19c26789e33ba310f49b38828b58",
-         intel: "ff5f0d3d3e38f31b13c9f7d38fabf8b41f7459e7ba6dad5d1d597bf38ca04370"
+  version "3.6.15,250604gw0jj0jdo"
+  sha256 arm:   "c193793afd3b197dcf89c48d25dfba9f0fea15d3980895a9930a996ad43efc22",
+         intel: "45e77264c65585ebbb6f14f9b041efaea1581bd4a7d9750c63d5be0b8e0dbf26"
 
   url "https://download.todesktop.com/210203cqcj00tw1/Morgen%20#{version.csv.first}%20-%20Build%20#{version.csv.second}-#{arch}.dmg",
       verified: "download.todesktop.com/210203cqcj00tw1/"

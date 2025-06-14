@@ -9,9 +9,11 @@ cask "hex-fiend" do
   homepage "https://ridiculousfish.com/hexfiend/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://raw.githubusercontent.com/ridiculousfish/HexFiend/master/app/appcast.xml"
+    strategy :sparkle, &:short_version
   end
+
+  no_autobump! because: :requires_manual_review
 
   auto_updates true
   depends_on macos: ">= :mojave"

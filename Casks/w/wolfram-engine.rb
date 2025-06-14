@@ -9,10 +9,11 @@ cask "wolfram-engine" do
   homepage "https://www.wolfram.com/engine/"
 
   livecheck do
-    url "https://account.wolfram.com/dl/WolframEngine?platform=Mac"
-    regex(%r{WolframEngine/(\d+(?:\.\d+)+)}i)
-    strategy :header_match
+    url "https://files.wolframcdn.com/packages/Homebrew/latest.txt"
+    regex(/^(\d+(?:\.\d+)+)$/i)
   end
+
+  no_autobump! because: :requires_manual_review
 
   depends_on macos: ">= :monterey"
 

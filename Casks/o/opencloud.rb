@@ -1,30 +1,18 @@
 cask "opencloud" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.0.0-rc.1"
-  sha256 arm:   "9b97142b7fa207cbb68e5a1926d9dafbd1375e06a5f2336b197f3fdb774a2626",
-         intel: "95443b0ea69d40d5916965aa7e3155bd10d048598a942fd9e78c519c1e1cdb7d"
+  version "1.0.0"
+  sha256 arm:   "9f98e18b6dfa4164198d8b3abae2855d11e5da89dd75e99cd50f2ca8b15cf625",
+         intel: "a9b44fea546040377f9c2bcce6da616cc0618603480e5df59f7ed20b7a427edf"
 
   url "https://github.com/opencloud-eu/desktop/releases/download/v#{version}/OpenCloud_Desktop-v#{version}-macos-clang-#{arch}.pkg"
   name "OpenCloud Desktop"
   desc "Desktop syncing client for OpenCloud"
   homepage "https://github.com/opencloud-eu/desktop"
 
-  # TODO: Update this to use the `GithubLatest` strategy (without a regex or
-  # `strategy` block) when a stable version becomes available.
   livecheck do
     url :url
-    regex(/^v?(\d+(?:\.\d+)+.+)$/i)
-    strategy :github_releases do |json, regex|
-      json.filter_map do |release|
-        next if release["draft"]
-
-        match = release["tag_name"]&.match(regex)
-        next if match.blank?
-
-        match[1]
-      end
-    end
+    strategy :github_latest
   end
 
   auto_updates true
