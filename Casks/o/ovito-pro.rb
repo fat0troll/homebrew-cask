@@ -2,8 +2,8 @@ cask "ovito-pro" do
   arch arm: "arm64", intel: "intel"
 
   on_arm do
-    version "3.12.1"
-    sha256 "447541ec2fdb419930caa88ca89b658411464ddbfa7bae90ceb6d9c6eba35ddb"
+    version "3.12.4"
+    sha256 "3202206cf8f50ff2d1fb78b8a1c783cae662659fcae04db59a379cced0c94caa"
   end
   on_intel do
     version "3.12.0"

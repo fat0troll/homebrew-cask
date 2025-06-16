@@ -1,16 +1,19 @@
 cask "flowvision" do
-  version "1.6.1"
-  sha256 "f8fbffe798d34bb41fec54fe82511829d48aaddf4cb2ecfb033ed1441b6b846a"
+  version "1.6.4"
+  sha256 "90890929b097e598987b13370a2f9c29d37cc8efe206928136b48d93e6d9475b"
 
-  url "https://github.com/netdcy/FlowVision/releases/download/#{version}/FlowVision.#{version}.zip"
+  url "https://github.com/netdcy/FlowVision/releases/download/#{version}/FlowVision.#{version}.zip",
+      verified: "github.com/netdcy/FlowVision/"
   name "FlowVision"
   desc "Waterfall-style image viewer"
-  homepage "https://github.com/netdcy/FlowVision"
+  homepage "https://flowvision.app/"
 
   livecheck do
     url :url
     strategy :github_latest
   end
+
+  no_autobump! because: :requires_manual_review
 
   depends_on macos: ">= :big_sur"
 

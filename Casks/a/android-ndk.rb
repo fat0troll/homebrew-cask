@@ -1,6 +1,6 @@
 cask "android-ndk" do
-  version "28"
-  sha256 "66de9e4f05373fea90a85554278a1d2ab2bac42b6d49b51b92fe833fa3effe38"
+  version "28b"
+  sha256 "62d8f433a321d1ec45bfa656c00172aaad040020e57b378913ec0b7bb7e1b6bf"
 
   url "https://dl.google.com/android/repository/android-ndk-r#{version}-darwin.dmg",
       verified: "dl.google.com/android/repository/"
@@ -12,6 +12,8 @@ cask "android-ndk" do
     url "https://developer.android.com/ndk/downloads"
     regex(/Latest\b(?!\s+Beta|\s+Pre-Release).*?r(\d+[a-z]?)/i)
   end
+
+  no_autobump! because: :requires_manual_review
 
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/ndk_exec.sh"

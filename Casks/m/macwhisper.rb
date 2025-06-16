@@ -1,9 +1,9 @@
 cask "macwhisper" do
-  version "12.4,1230"
-  sha256 "3a28d26ee8c78ac86010cd11db60f7588eec0ec2f6f5f75e6be8d8ead8b19164"
+  version "12.11,1262"
+  sha256 "5e1a30d802daf274dbe797c999736d9e74adfc8ad270c3e8b4d422ce109f4ff9"
 
-  url "https://stickytimers.app/macwhisper/MacWhisper-#{version.csv.second}.zip",
-      verified: "stickytimers.app/macwhisper/"
+  url "https://cdn.macwhisper.com/macwhisper/MacWhisper-#{version.csv.second}.zip",
+      verified: "cdn.macwhisper.com/"
   name "MacWhisper"
   desc "Speech recognition tool"
   homepage "https://goodsnooze.gumroad.com/l/macwhisper"

@@ -1,9 +1,9 @@
 cask "onekey" do
   arch arm: "arm64", intel: "x64"
 
-  version "5.7.1"
-  sha256 arm:   "c5b115cb4ea989653f5e5ad981f32772a7090e835ec32142d9dafac8fa197be3",
-         intel: "23c8f40f1b0419f273601a53770351a69be6d9304b618299572f8d021dc9718b"
+  version "5.9.0"
+  sha256 arm:   "c308cd621719ef6ff933b1ca726e89af2fe872c7e115c846a0fe40da54bcd627",
+         intel: "9d5fd3e2d0c70b8350795acbe6fc073402ecae3730345fdc7dc9bce457e10c14"
 
   url "https://github.com/OneKeyHQ/app-monorepo/releases/download/v#{version}/OneKey-Wallet-#{version}-mac-#{arch}.dmg",
       verified: "github.com/OneKeyHQ/app-monorepo/"
@@ -12,8 +12,10 @@ cask "onekey" do
   homepage "https://onekey.so/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://data.onekey.so/config.json"
+    strategy :json do |json|
+      json.dig("desktop", "version")&.join(".")
+    end
   end
 
   auto_updates true

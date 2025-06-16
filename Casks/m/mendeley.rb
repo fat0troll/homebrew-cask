@@ -7,8 +7,10 @@ cask "mendeley" do
   desc "Research management tool"
   homepage "https://www.mendeley.com/reference-management/mendeley-desktop"
 
+  no_autobump! because: :requires_manual_review
+
   deprecate! date: "2024-03-12", because: :discontinued
-  disable! date: "2025-03-15", because: :discontinued, replacement: "mendeley-reference-manager"
+  disable! date: "2025-03-15", because: :discontinued, replacement_cask: "mendeley-reference-manager"
 
   app "Mendeley Desktop.app"
 

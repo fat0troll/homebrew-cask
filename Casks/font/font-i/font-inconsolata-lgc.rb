@@ -1,6 +1,6 @@
 cask "font-inconsolata-lgc" do
-  version "1.13.0"
-  sha256 "c03abd15b2abd26da2d792dec28104a636b5c7a58af9dba52f00c5c9bc6cf52e"
+  version "1.13.2"
+  sha256 "e4937fb1c0a5ed0b99d4368dcafa6ea4e465967e3e83c60962370755f7ac076f"
 
   url "https://github.com/MihailJP/Inconsolata-LGC/releases/download/LGC-#{version}/InconsolataLGC-#{version}.tar.xz"
   name "Inconsolata LGC"

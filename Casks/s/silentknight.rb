@@ -36,11 +36,12 @@ cask "silentknight" do
     (i < 1 || n.length > 1) ? n : n.rjust(2, "0")
   end.join
 
-  url "https://eclecticlightdotcom.files.wordpress.com/#{version.csv.second.major}/#{version.csv.second.minor}/silentknight#{no_dot_version}.zip",
-      verified: "eclecticlightdotcom.files.wordpress.com/"
+  url "https://eclecticlight.co/wp-content/uploads/#{version.csv.second.major}/#{version.csv.second.minor}/silentknight#{no_dot_version}.zip"
   name "SilentKnight"
   desc "Automatically checks computer's security"
   homepage "https://eclecticlight.co/lockrattler-systhist/"
+
+  no_autobump! because: :requires_manual_review
 
   app "silentknight#{no_dot_version}/SilentKnight.app"
 

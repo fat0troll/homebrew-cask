@@ -1,6 +1,6 @@
 cask "adobe-air" do
-  version "51.1.3.4"
-  sha256 "e00d01abdec2fc64025c3f1dcd3c8b2cde76a6276da241ed77ee2010e78c37ae"
+  version "51.2.1.5"
+  sha256 "a41b8dbdf5f895dce2ac10dfb32afc9b1c37007c7f54aae59dc5f345ac19e041"
 
   url "https://airsdk.harman.com/assets/downloads/#{version}/AdobeAIR.dmg"
   name "Adobe AIR"
@@ -44,5 +44,5 @@ cask "adobe-air" do
         "~/Library/Application Support/Adobe/AIR",
         "~/Library/Caches/com.adobe.air.ApplicationInstaller",
       ],
-      rmdir: "~/Library/Application Support/Adobe/"
+      rmdir: "~/Library/Application Support/Adobe"
 end

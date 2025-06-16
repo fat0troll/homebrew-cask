@@ -1,9 +1,9 @@
 cask "gramps" do
   arch arm: "Arm", intel: "Intel"
 
-  version "6.0.0,2"
-  sha256 arm:   "457a4bd5923509933c6a489de2a9a7f630f62f6d214c7c43d77ece93f165c08a",
-         intel: "5d97df7382d227d1c6ff4bde20cb7ba5110d9fdfb3ff92ae0728ccf656fb630b"
+  version "6.0.1,2"
+  sha256 arm:   "3b83a876fc9110f81818b9ff040026c9c02e0e171c0b2861c691df01b6ab6909",
+         intel: "7d4a72ae4b9c7d0c72b0fb63a5cd09ce397c9c825eb52fe8e7d8c95c4b285d69"
 
   url "https://github.com/gramps-project/gramps/releases/download/v#{version.csv.first}/Gramps-#{arch}-#{version.csv.first}-#{version.csv.second}.dmg",
       verified: "github.com/gramps-project/gramps/"

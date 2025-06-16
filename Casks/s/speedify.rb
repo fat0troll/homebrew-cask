@@ -1,6 +1,6 @@
 cask "speedify" do
-  version "15.5.0,3503"
-  sha256 "24f6f3de8ab302b1c2a0fdd23425b618520e36f271dd3b5bfef31782f8d9a02b"
+  version "15.6.4,3623"
+  sha256 "14f5510d8a1e9e6646c74ffb305891446be51916fe47e7e2b54e46418a039531"
 
   url "https://downloads.speedify.com/Speedify-#{version.csv.first}.#{version.csv.second}.dmg"
   name "Speedify"

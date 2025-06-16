@@ -8,9 +8,13 @@ cask "thor" do
   homepage "https://github.com/gbammc/Thor/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://github.com/gbammc/Thor/raw/master/Releases/appcast.xml"
+    strategy :sparkle do |items|
+      items.map(&:short_version)
+    end
   end
+
+  no_autobump! because: :requires_manual_review
 
   auto_updates true
   depends_on macos: ">= :monterey"

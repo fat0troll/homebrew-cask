@@ -1,6 +1,6 @@
 cask "easydict" do
-  version "2.13.0"
-  sha256 "ce25da541312106bfd850de8118868a80d04cb378f44a1b2d98ac4c7eae070c2"
+  version "2.14.1"
+  sha256 "42b8d168fbbcbd45c330978f377e26d1a23822ce134627c9edb082736125a3c3"
 
   url "https://github.com/tisfeng/Easydict/releases/download/#{version}/Easydict.dmg"
   name "Easydict"
@@ -8,8 +8,8 @@ cask "easydict" do
   homepage "https://github.com/tisfeng/Easydict/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://raw.githubusercontent.com/tisfeng/Easydict/main/appcast.xml"
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true

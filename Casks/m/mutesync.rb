@@ -11,14 +11,16 @@ cask "mutesync" do
   desc "Companion app to the mütesync physical button"
   homepage "https://mutesync.com/"
 
-  disable! date: "2025-01-26", because: :discontinued, replacement: "muteme"
+  no_autobump! because: :requires_manual_review
+
+  disable! date: "2025-01-26", because: :discontinued, replacement_cask: "muteme"
 
   auto_updates true
 
   app "mutesync.app"
 
   zap trash: [
-    "~/Library/Application Support/mutesync/",
+    "~/Library/Application Support/mutesync",
     "~/Library/Preferences/com.mutesync.electron.plist",
   ]
 end

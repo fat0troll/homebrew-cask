@@ -3,12 +3,12 @@ cask "effect-house" do
   livecheck_arch = on_arch_conditional arm: "arm64", intel: "x86_64"
 
   on_arm do
-    version "4.12.2,2962,03202025,104"
-    sha256 "4927270dc1baa4f96a54d2b54c8fa8abfccb121f3438ec03b52febb55ad479ac"
+    version "4.14.3,0718,05272025,104"
+    sha256 "95cef9a262c7fc1fc5e2f8e58f2f0f528f436a745185407a8a12564201ccb6aa"
   end
   on_intel do
-    version "4.12.2,2967,03202025,104"
-    sha256 "b9dbd121d6fd046a7e994617080257be0fd7f64e88423718e7e27b3c9e1721f6"
+    version "4.14.3,0723,05272025,104"
+    sha256 "cff0eb414f82f626878bc9c9e6f7aa620ff4b6605a08a6fabc4fa034e830e2be"
   end
 
   url "https://sf16-va.tiktokcdn.com/obj/eden-va2/olaa_ajlmml_zlp/ljhwZthlaukjlkulzlp/V#{version.csv.first.no_dots}_External_Release_Builds_#{version.csv.third}/Effect_House_v#{version.csv.first}.#{version.csv.second}_#{arch}_#{version.csv.fourth}.dmg",
@@ -31,6 +31,8 @@ cask "effect-house" do
       "#{match[2]},#{match[3]},#{match[1]},#{match[4]}"
     end
   end
+
+  no_autobump! because: :requires_manual_review
 
   depends_on macos: ">= :sierra"
 

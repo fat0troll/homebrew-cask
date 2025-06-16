@@ -1,6 +1,6 @@
 cask "ghostty@tip" do
-  version "10068,4aa875bbf641d9c31619217b3dc373d734986247"
-  sha256 "1efc23ab1f3456cf54831d07ea5b28932d9a00f28e4350197524961e2a3a11d5"
+  version "10601,d0f116da3554c151c63fd3a11e90661cb8489359"
+  sha256 "e7e5fe9532e79202e0fefb0e2b69427d38b1071e15829142dd81c7ecab95754e"
 
   url "https://tip.files.ghostty.org/#{version.csv.second}/Ghostty.dmg"
   name "Ghostty"
@@ -24,14 +24,11 @@ cask "ghostty@tip" do
 
   app "Ghostty.app"
   binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
-  binary "#{appdir}/Ghostty.app/Contents/Resources/bash-completion/completions/ghostty.bash",
-         target: "#{HOMEBREW_PREFIX}/etc/bash_completion.d/ghostty"
-  binary "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish",
-         target: "#{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/ghostty.fish"
-  binary "#{appdir}/Ghostty.app/Contents/Resources/zsh/site-functions/_ghostty",
-         target: "#{HOMEBREW_PREFIX}/share/zsh/site-functions/_ghostty"
   manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man1/ghostty.1"
   manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man5/ghostty.5"
+  bash_completion "#{appdir}/Ghostty.app/Contents/Resources/bash-completion/completions/ghostty.bash"
+  fish_completion "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish"
+  zsh_completion "#{appdir}/Ghostty.app/Contents/Resources/zsh/site-functions/_ghostty"
 
   zap trash: [
     "~/.config/ghostty/",

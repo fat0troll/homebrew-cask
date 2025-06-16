@@ -1,6 +1,6 @@
 cask "adobe-acrobat-reader" do
-  version "25.001.20432"
-  sha256 "7a668c506c4694bb4f481eb3f6f98f17ee28975366e9547bddbb407238d37718"
+  version "25.001.20529"
+  sha256 "3ccb062c081bd7ac5b8a9183ebb6a52cfd6046411e6d51a89f12e132b6672f63"
 
   url "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/#{version.no_dots}/AcroRdrDC_#{version.no_dots}_MUI.dmg"
   name "Adobe Acrobat Reader"
@@ -39,6 +39,8 @@ cask "adobe-acrobat-reader" do
             ]
 
   zap trash: [
+    "~/Library/Application Support/Adobe/Acrobat",
+    "~/Library/Application Support/Adobe/AcroCef",
     "~/Library/Caches/com.adobe.Reader",
     "~/Library/HTTPStorages/com.adobe.Reader",
     "~/Library/HTTPStorages/com.adobe.Reader.binarycookies",
